@@ -16,3 +16,85 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/ai-performance-management.git
+cd ai-performance-management
+Back-End Setup (Node.js):
+
+bash
+Copy code
+cd backend
+npm install
+AI Backend Setup (Flask):
+
+bash
+Copy code
+cd ../ai-backend
+pip install -r requirements.txt
+Database Setup:
+
+Create a MySQL or PostgreSQL database and configure the credentials in backend/.env and ai-backend/.env.
+Front-End Setup (React):
+
+bash
+Copy code
+cd ../frontend
+npm install
+npm start
+Usage
+Starting the Server
+Start the Node.js Server:
+
+bash
+Copy code
+cd backend
+npm start
+Start the Flask AI Service:
+
+bash
+Copy code
+cd ../ai-backend
+python app.py
+Run the React Front-End:
+
+bash
+Copy code
+cd ../frontend
+npm start
+Visit http://localhost:3000 in your browser to access the application.
+
+Deployment
+AWS Deployment
+Front-End: Deploy the React app to an S3 bucket for static website hosting.
+Back-End (Node.js): Deploy to an EC2 instance. Ensure security groups and ports are correctly configured.
+AI Backend (Flask): Deploy on an EC2 instance.
+Database: Use AWS RDS for MySQL/PostgreSQL.
+For automated deployment, use GitHub Actions or Jenkins.
+
+Contributing
+We welcome contributions to this project. To contribute:
+
+Fork the repository.
+Create a feature branch: git checkout -b feature/YourFeature.
+Commit your changes: git commit -m 'Add feature'.
+Push to the branch: git push origin feature/YourFeature.
+Open a pull request.
+License
+Distributed under the MIT License. See LICENSE for more details.
+
+Contact
+Prince Kumar
+
+Email: princekumar@example.com
+LinkedIn: Prince Kumar
+For any questions or support, feel free to reach out.
+
+Acknowledgments
+Special thanks to the startup team for their contributions:
+
+[Team Member 1]
+[Team Member 2]
+[Team Member 3]
