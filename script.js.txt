@@ -1,0 +1,10 @@
+// Demo button click event
+document.getElementById("demoButton").addEventListener("click", function() {
+    alert("Thank you for requesting a demo. We will contact you shortly!");
+});
+
+// Contact form submit event
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();  // Prevent form from submitting
+    alert("Thank you for reaching out! We'll get back to you soon.");
+});
